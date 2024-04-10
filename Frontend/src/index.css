@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+
+.icons{
+    @apply h-10 w-10 transition-transform hover:scale-110
+}
+.btn{
+    @apply p-2 border-2 rounded-lg  shadow-sm capitalize
+}
+
+
+#contacts a.active{
+    @apply bg-gray-100
+}
+.SideBar a.active{
+    @apply text-gray-900  bg-sky-900/40
+}
+.SideBar a:hover{
+    @apply bg-sky-900/50
+}
+#contacts a:hover{
+    @apply  bg-gray-50 
+}
+.mss{
+    @apply p-2 bg-white rounded-md shadow-sm relative flex space-x-2  leading-tight 
+}
+
+@tailwind utilities;
+
+@layer components {
+    @variants responsive {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+    }
+  }
